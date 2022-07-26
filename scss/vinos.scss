@@ -1,0 +1,46 @@
+.wine {
+    background-color: #DD7F1F;
+    width: 100%; 
+    
+    &__title {
+        color: #e2e8f0;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    &__card {
+        background-color: #fff;
+        color: black;
+        border: solid #730202;
+        padding: 1.5rem;
+        width: 23rem;
+        border-radius: 10px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1.5);
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        transition: translate 0.3s;
+
+        &:hover {
+            transform: translate(-12px);
+        }
+
+        &__p {
+            margin-top: 1 rem;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+        
+    }
+
+}
+
+
+
+

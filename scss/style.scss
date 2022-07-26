@@ -1,0 +1,111 @@
+@import "global";
+@import "header_footer";
+@import "dulces";
+@import "vinos";
+@import "contacto";
+
+
+
+@media screen and (max-width: 1200px) {
+    .main__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .card__img {
+        width: 300px;
+    }
+
+    .card__img img {
+        width: 100%;
+    }
+
+    .wine__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+       
+    }
+
+     
+}
+
+@media screen and (max-width:768px) {
+
+    .index__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .main__grid{
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .wine__grid {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6, 1fr);
+           
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+     
+
+}
+
+@media screen and (max-width:480px) {
+    
+    .index__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .index__card {
+        width: 18rem;
+    }
+
+    .index__img img {
+        width: 15rem;
+    }
+
+    .wine__card {
+        background-color: #fff;
+        color: black;
+        border: solid #730202;
+        padding: 1.5rem;
+        width: 18rem;
+        border-radius: 10px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1.5);
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+    
+    }
+   
+    .header__navbar {
+        display: inline-block;
+
+    }
+
+    .header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card {
+        width: 20rem;
+        padding: 0.5rem;
+    }
+   
+    .form__conteiner {
+        max-width: 300px;
+    
+    }
+    
+    .footer{
+        display: inline-block;
+        
+    }
+}
