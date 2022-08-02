@@ -1,5 +1,6 @@
 @import "global";
 @import "header_footer";
+@import "index";
 @import "dulces";
 @import "vinos";
 @import "contacto";
@@ -105,7 +106,8 @@
     }
     
     .footer{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         
     }
 }

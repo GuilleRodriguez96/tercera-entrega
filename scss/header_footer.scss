@@ -14,7 +14,7 @@
 
     &__title {
         color: whitesmoke;
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     &__navbar {
@@ -36,10 +36,8 @@
 
 .footer {
     background-color: #18100C;
-    color: white;
     display: flex;
-    justify-content: center;      
-    margin: 0; 
+    justify-content: center;          
     
     &__title {
         color: #e2e8f0;
@@ -48,7 +46,7 @@
     }
 
     &__img {
-        margin: 10px 30px;
+        margin: 10px 20px;
     }
 }   
 

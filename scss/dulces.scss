@@ -1,13 +1,32 @@
 .main{
     background-color: #DD7F1F;
     width: auto;
+
+    &__title {
+        color: #fff;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    &__title {
+        color: #fff;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    &__img {
+        overflow: hidden;
+    }
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+    }
 }
 
-.main__title {
-    color: #fff;
-    text-align: center;
-    font-size: 45px;
-}
+
 
 .card {
     background-color: #fff;
@@ -19,45 +38,41 @@
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
     overflow: hidden;
     transition: translatex 0.4s;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
  }
 
-.card:hover {
-    transform: translatex(-10px);
-}
 
-.card__img {
-    overflow: hidden;
-}
 
-.main__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px;
-}
 
 .arrope {
     line-height: 1.5;
     margin-top: 35px;
+
+    &__title {
+        background-color: #730202;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    &__subtitle {
+        background-color: white;
+        color: #730202;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    &__arrope__text {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 50px 50px;
+    }
 }
 
-.arrope__title {
-    background-color: #730202;
-    color: white;
-    text-align: center;
-    font-size: 35px;
-}
 
-.arrope__subtitle {
-    background-color: white;
-    color: #730202;
-    font-size: 25px;
-    text-align: center;
-}
 
-.arrope__text {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    padding: 50px 50px;
-}
+

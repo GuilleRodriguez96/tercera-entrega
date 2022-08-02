@@ -46,25 +46,73 @@ ul {
 /*footer*/
 .footer {
   background-color: #18100C;
-  color: white;
   display: flex;
-  justify-content: center;
-  margin: 0; }
+  justify-content: center; }
   .footer__title {
     color: #e2e8f0;
     font-size: 25px;
     margin: 10px 10px; }
   .footer__img {
-    margin: 10px 30px; }
+    margin: 10px 20px; }
+
+.index {
+  background-color: #DD7F1F;
+  color: white; }
+  .index__title {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px; }
+  .index__p {
+    font-size: 20px;
+    font-weight: bold;
+    border: #730202 solid 15px;
+    padding: 25px; }
+  .index__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 45px; }
+  .index__card {
+    background-color: #c0bdbd;
+    padding: 1.5rem;
+    width: 23rem;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px black;
+    margin: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    transition: transform 0.4s; }
+    .index__card:hover {
+      transform: translateY(-15px); }
+  .index__img {
+    display: flex;
+    justify-content: center; }
+  .index__button {
+    background-color: #730202;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px; }
 
 .main {
   background-color: #DD7F1F;
   width: auto; }
-
-.main__title {
-  color: #fff;
-  text-align: center;
-  font-size: 45px; }
+  .main__title {
+    color: #fff;
+    text-align: center;
+    font-size: 45px; }
+  .main__title {
+    color: #fff;
+    text-align: center;
+    font-size: 45px; }
+  .main__img {
+    overflow: hidden; }
+  .main__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px; }
 
 .card {
   background-color: #fff;
@@ -76,40 +124,27 @@ ul {
   box-shadow: 0 25px 50px -12px black;
   overflow: hidden;
   transition: translatex 0.4s; }
-
-.card:hover {
-  transform: translatex(-10px); }
-
-.card__img {
-  overflow: hidden; }
-
-.main__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 25px; }
+  .card:hover {
+    transform: translateY(-10px); }
 
 .arrope {
   line-height: 1.5;
   margin-top: 35px; }
-
-.arrope__title {
-  background-color: #730202;
-  color: white;
-  text-align: center;
-  font-size: 35px; }
-
-.arrope__subtitle {
-  background-color: white;
-  color: #730202;
-  font-size: 25px;
-  text-align: center; }
-
-.arrope__text {
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  padding: 50px 50px; }
+  .arrope__title {
+    background-color: #730202;
+    color: white;
+    text-align: center;
+    font-size: 35px; }
+  .arrope__subtitle {
+    background-color: white;
+    color: #730202;
+    font-size: 25px;
+    text-align: center; }
+  .arrope__arrope__text {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 50px 50px; }
 
 .wine {
   background-color: #DD7F1F;
@@ -135,6 +170,9 @@ ul {
       transform: translate(-12px); }
     .wine__card__p {
       margin-top: 1 rem; }
+  .wine__img {
+    display: flex;
+    justify-content: center; }
   .wine__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -169,7 +207,7 @@ ul {
     padding: 30px 10px;
     margin-bottom: 10px; }
   .form__button {
-    background-color: #089fe0;
+    background-color: #730202;
     color: #fff;
     border-radius: 5px;
     font-size: 25px;
@@ -232,4 +270,5 @@ ul {
   .form__conteiner {
     max-width: 300px; }
   .footer {
-    display: inline-block; } }
+    display: flex;
+    flex-direction: column; } }
